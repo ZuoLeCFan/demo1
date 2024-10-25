@@ -1,0 +1,22 @@
+.savePhotoContainer {
+    display: grid;
+    grid-template-columns: 0.1fr 1fr;
+
+    .plusContainer {
+        padding: 20px;
+        border: 2px dashed #ccc;
+        margin: auto;
+    }
+
+    .show-photo {
+       display: flex;
+       flex-wrap: nowrap;
+       overflow-x: auto;
+       gap: 10px;
+    }
+
+    .images{
+        height: 100px;
+        border-radius: 10px;
+    }
+}

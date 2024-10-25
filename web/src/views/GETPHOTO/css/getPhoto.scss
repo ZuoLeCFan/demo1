@@ -1,0 +1,36 @@
+.container-search {
+    display: grid;
+    grid-template-rows: 80px 100px 1fr;
+    background: linear-gradient(to bottom, #d4f2f5, #fff);
+}
+
+.searchContainer {
+    margin: 5px auto;
+}
+
+/* From Uiverse.io by deepak16375 */
+.input {
+    max-width: 500px;
+    width: 500px;
+    padding: 15px;
+    font-size: 17px;
+    color: black;
+    border-top-left-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
+    border: 2px solid #fff;
+    //   margin-right: -10px;
+}
+
+.button {
+    width: 60px;
+    border: none;
+    background-color: #1363df;
+    text-decoration: none;
+    padding: 17px;
+    padding-bottom: 15px;
+    font-size: 17px;
+    color: #fff;
+    border-top-right-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    cursor: pointer;
+}

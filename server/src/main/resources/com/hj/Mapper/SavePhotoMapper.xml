@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.hj.Mapper.SavePhotoMapper">
+
+   <insert id="setImage" parameterType="com.hj.bean.bo.Image">
+       insert into img (id,url,name,path,searchText) values (#{id},#{url},#{name},#{path},#{searchText})
+   </insert>
+
+    <select id="selectLastId" parameterType="com.hj.bean.bo.Image" resultType="com.hj.bean.bo.Image">
+        select id from img order by id desc limit 1
+    </select>
+
+    <delete id="deleteImageById" parameterType="com.hj.bean.bo.Image">
+        delete from img where id=#{id}
+    </delete>
+
+    <select id="getPhoto" parameterType="com.hj.bean.bo.Image" resultType="com.hj.bean.bo.Image">
+        select * from img
+    </select>
+
+    <update id="revisePhoto" parameterType="com.hj.bean.bo.Image">
+        update img set searchText=#{searchText} where id=#{id}
+    </update>
+
+</mapper>
